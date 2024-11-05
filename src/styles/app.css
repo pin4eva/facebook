@@ -1,0 +1,5 @@
+.app {
+  .main-wrapper {
+    min-height: calc(100vh - 66px);
+  }
+}

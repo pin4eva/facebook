@@ -1,0 +1,64 @@
+@import "./variables";
+.header {
+  height: 66px;
+  background: #fff;
+  box-shadow: 0px -5px 19.1px -1px rgba(0, 0, 0, 0.25);
+  display: grid;
+  align-items: center;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 19px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+      .search {
+        display: flex;
+        align-items: center;
+        background-color: $light-gray;
+        width: 100%;
+        max-width: 310px;
+        height: 37px;
+        border-radius: 28px;
+        gap: 0.5rem;
+        .search-icon {
+          margin-left: 1rem;
+        }
+        input {
+          all: unset;
+        }
+      }
+    }
+
+    .middle-nav {
+      display: flex;
+      list-style: none;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      align-items: flex-end;
+      justify-content: space-around;
+      gap: 0.5rem;
+
+      li {
+        img {
+          padding-bottom: 0.25rem;
+        }
+        &.active {
+          border-bottom: 3px solid $primary;
+        }
+      }
+    }
+
+    .settings {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
